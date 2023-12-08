@@ -4,8 +4,10 @@ function Book(title, author, pages, read) {
   this.pages = pages;
   this.read = read;
 
-  this.sayName = () => console.log(nama);
+  this.info = () =>
+    console.log(
+      `${title} by ${author}, ${pages} pages, ${
+        read ? "have read" : "not read yet"
+      }`
+    );
 }
-
-let wafa = new Player("Wafa", "Mage");
-wafa.sayName();
