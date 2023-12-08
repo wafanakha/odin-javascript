@@ -13,3 +13,4 @@ function Book(title, author, pages, read) {
 }
 
 const lily = new Book("Mario the idea", "Tonaka Matsunaga", 300, false);
+lily.info();
