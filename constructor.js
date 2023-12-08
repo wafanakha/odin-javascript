@@ -1,6 +1,9 @@
-function Player(nama, clas) {
-  this.nama = nama;
-  this.clas = clas;
+function Book(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+
   this.sayName = () => console.log(nama);
 }
 
