@@ -14,3 +14,11 @@ function Book(title, author, pages, read) {
 
 const lily = new Book("Mario the idea", "Tonaka Matsunaga", 300, false);
 lily.info();
+
+console.log(Object.getPrototypeOf(lily) === Book.prototype);
+
+Book.prototype.infoAuthor = function () {
+  console.log("This book written by " + this.author);
+};
+
+lily.infoAuthor();
