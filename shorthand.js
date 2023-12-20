@@ -15,4 +15,4 @@ const nameDisplay = "Disguise";
 const weapon = "Sword";
 const hr = 3;
 
-const hunter = { hunterName: nameDisplay, type: weapon, hr: hr };
+const hunter = { nameDisplay, weapon, hr };
