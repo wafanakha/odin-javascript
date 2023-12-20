@@ -22,6 +22,7 @@ const caveStory = new Article("The Cave Story");
 caveStory.author = "James Miller";
 caveStory.pages = 140;
 caveStory.read = true;
+
 Book.prototype.infoAuthor = function () {
   console.log("This book written by " + this.author);
 };
