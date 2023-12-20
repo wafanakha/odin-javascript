@@ -8,3 +8,11 @@ function createUser(name) {
   const nick = "@" + name;
   return { name, nick };
 }
+
+// this is shorthand version
+
+const nameDisplay = "Disguise";
+const weapon = "Sword";
+const hr = 3;
+
+const hunter = { hunterName: nameDisplay, type: weapon, hr: hr };
