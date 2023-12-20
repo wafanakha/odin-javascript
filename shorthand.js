@@ -1,13 +1,26 @@
-const User = function (name) {
+const Hunter = function (name) {
   this.name = name;
   this.nick = `@ ${this.name}`;
 };
 
 // this is same
-function createUser(name) {
+function createHunter(name) {
   const nick = "@" + name;
-  return { name, nick };
+
+  let hr = 0;
+
+  const showHr = () => hr;
+  const addHr = () => hr++;
+
+  return { name, nick, showHr, addHr };
 }
+const qot = createHunter("Al-Qot");
+qot.addHr();
+
+console.log({
+  name: qot.name,
+  hr: qot.addHr(),
+});
 
 // this is shorthand version
 
