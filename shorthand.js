@@ -16,3 +16,6 @@ const weapon = "Sword";
 const hr = 3;
 
 const hunter = { nameDisplay, weapon, hr };
+// const hunter = { nameDisplay : nameDisplay , weapon : weapon , hr : hr };
+//
+console.log(nameDisplay, weapon, hr);
