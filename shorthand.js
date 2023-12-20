@@ -1,25 +1,32 @@
-const Hunter = function (name) {
+const Hunter = function (name, palico) {
   this.name = name;
   this.nick = `@ ${this.name}`;
+  this.palico = palico;
 };
 
 // this is same
-function createHunter(name) {
-  const nick = "@" + name;
 
+function createPalico(palicoName) {
+  const gen = "awok" + palicoName;
+  return { palicoName, gen };
+}
+
+function createHunter(name, palico) {
+  const { palicoName } = createPalico(palico);
   let hr = 0;
 
   const showHr = () => hr;
   const addHr = () => hr++;
 
-  return { name, nick, showHr, addHr };
+  return { name, palicoName, showHr, addHr };
 }
-const qot = createHunter("Al-Qot");
+const qot = createHunter("Al-Qot", "Qot");
 qot.addHr();
 
 console.log({
   name: qot.name,
   hr: qot.addHr(),
+  palico: qot.palicoName,
 });
 
 // this is shorthand version
