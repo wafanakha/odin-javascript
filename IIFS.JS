@@ -5,3 +5,5 @@ const calculator = (function () {
   const div = (a, b) => a / b;
   return { add, sub, mul, div };
 })();
+
+console.log(calculator.add(3, 5));
